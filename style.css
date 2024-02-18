@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(233, 230, 230);
+}
+a{
+    text-decoration: none;
+}
+.nav-left a{
+    color: black;
+    letter-spacing: 2px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.nav-left a:hover{
+    background-color: #ccc;
+}
+.nav-left a span{
+    font-size:20px;
+}
+.nav-right ul{
+    display: flex;
+    list-style: none;
+}
+.nav-right ul a{
+    margin-right: 10px;
+    letter-spacing: 2px;
+    color: black;
+    padding: 10px;
+    transition: 0.5;
+}
+.nav-right ul a:hover{
+    background-color: #ccc;
+}
+nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+header{
+    background-image: url(images/architect.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header h2 span{
+    background-color:black;
+    opacity: 0.7;
+    padding: 15px;
+    font-weight: 700;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.sections h2{
+    margin: 60px 0 30px 0;
+}
+.sections hr{
+    opacity: 0.5;
+}
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10px;
+}
+.section-img{
+    width: 24%;
+    position: relative;
+}
+.section-img img{
+    width: 100%;
+}
+.section-img p{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    width:fit-content;
+    padding: 10px;
+}
+.about-content h2{
+    margin: 80px 0 20px 0;
+}
+.about-content p{
+    margin-top: 20px;
+    line-height: 25px;
+}
+.about-content hr{
+    opacity: 0.5;
+}
+.chars{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+.char{
+    width: 24%;
+}
+.char img{
+    width: 100%;
+}
+.char .name{
+    font-size: 18px;
+    font-weight: 700;
+}
+.char .information{
+    opacity: 0.5;
+}
+.char .direction{
+    word-spacing: 8px;
+}
+.char button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #ccc;
+    font-size: 16px;
+}
+.char button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.contact h2{
+    margin: 50px 0 20px 0;
+}
+.contact hr{
+    opacity: 0.5;
+}
+.contact p{
+    margin: 20px 0 20px 0px;
+
+}
+.contact input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.contact button{
+    padding: 15px 20px 15px 20px;
+    width: 20%;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 10px 0 20px 0;
+    font-size: 16px;
+    font-weight: 100;
+}
+.contact button:hover{
+    background-color: white;
+    color: black;
+}
+.map img{
+    width: 100%;
+}
+footer p{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+
+}
+footer p a{
+    color: white;
+    text-decoration: underline;
+}
+@media screen and (max-width:480px){
+    nav{
+        padding: 20px;
+    }
+    .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header{
+        padding-left: 10%;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .section-img{
+        width: 100%;
+    }
+    .chars{
+        flex-direction: column;
+    }
+    .char{
+        width: 100%;
+    }
+    .contact button{
+        width: 100%;
+    }
+        
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    nav{
+        padding: 20px;
+    }
+    .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header{
+        padding-left: 30%;
+    }
+    .section1{
+        flex-wrap: wrap;
+    }
+    .section-img{
+        width: 48%;
+    }
+    .chars{
+        flex-wrap: wrap;
+    }
+    .char{
+        width: 48%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
